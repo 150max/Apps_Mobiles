@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="5dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintWidth_percent=".3"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/officedesk"
+            />
+
+        <TextView
+            android:id="@+id/id_centro1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="Nome:"
+            android:textColor="#212121"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nome_sala"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:text="id_da_reserva"
+            android:textColor="#212121"
+            app:layout_constraintStart_toEndOf="@+id/id_centro1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nome_centro2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            android:text="Lotação:"
+            app:layout_constraintStart_toStartOf="@+id/id_centro1"
+            app:layout_constraintTop_toBottomOf="@+id/id_centro1" />
+
+        <TextView
+            android:id="@+id/lotacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            android:textColor="#212121"
+            app:layout_constraintStart_toEndOf="@+id/nome_centro2"
+            app:layout_constraintTop_toBottomOf="@+id/nome_sala" />
+
+        <TextView
+            android:id="@+id/morada3"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado:"
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            app:layout_constraintStart_toStartOf="@+id/nome_centro2"
+            app:layout_constraintTop_toBottomOf="@+id/nome_centro2" />
+        <TextView
+            android:id="@+id/estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginStart="3dp"
+
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            app:layout_constraintStart_toEndOf="@+id/morada3"
+            app:layout_constraintTop_toBottomOf="@+id/lotacao" />
+        <TextView
+            android:id="@+id/estado4"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limite:"
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            app:layout_constraintStart_toStartOf="@+id/morada3"
+            app:layout_constraintTop_toBottomOf="@+id/morada3" />
+        <TextView
+            android:id="@+id/limite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginStart="3dp"
+
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            app:layout_constraintStart_toEndOf="@+id/estado4"
+            app:layout_constraintTop_toBottomOf="@+id/estado" />
+
+        <TextView
+            android:id="@+id/maximo1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximo:"
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            app:layout_constraintStart_toStartOf="@+id/estado4"
+            app:layout_constraintTop_toBottomOf="@+id/estado4" />
+        <TextView
+            android:id="@+id/maximo"
+            android:layout_marginStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:fontFamily="sans-serif"
+            android:textColor="#212121"
+            app:layout_constraintStart_toEndOf="@+id/maximo1"
+            app:layout_constraintTop_toBottomOf="@+id/limite" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/officebuilding"
+        />
+
+    <TextView
+        android:id="@+id/id_centro1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:text="Numero:"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/nome_centro2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="#212121"
+        android:text="Nome:"
+        app:layout_constraintStart_toStartOf="@+id/id_centro1"
+        app:layout_constraintTop_toBottomOf="@+id/id_centro1" />
+
+    <TextView
+        android:id="@+id/morada3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morada:"
+        android:fontFamily="sans-serif"
+        android:textColor="#212121"
+        app:layout_constraintStart_toStartOf="@+id/nome_centro2"
+        app:layout_constraintTop_toBottomOf="@+id/nome_centro2" />
+    <TextView
+        android:id="@+id/estado4"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado:"
+        android:fontFamily="sans-serif"
+        android:textColor="#212121"
+        app:layout_constraintStart_toStartOf="@+id/morada3"
+        app:layout_constraintTop_toBottomOf="@+id/morada3" />
+
+
+    <TextView
+        android:id="@+id/id_centro"
+        android:layout_width="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="id_da_reserva"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@+id/id_centro1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nome_centro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@+id/nome_centro2"
+        app:layout_constraintTop_toBottomOf="@+id/id_centro" />
+
+    <TextView
+        android:id="@+id/morada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="3dp"
+
+        android:fontFamily="sans-serif"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@+id/morada3"
+        app:layout_constraintTop_toBottomOf="@+id/nome_centro" />
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif"
+        android:textColor="#212121"
+        app:layout_constraintStart_toEndOf="@+id/estado4"
+        app:layout_constraintTop_toBottomOf="@+id/morada" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
